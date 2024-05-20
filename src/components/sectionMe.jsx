@@ -11,9 +11,8 @@ export default function SectionMe() {
             </div>
             <div className="col-lg-6">
                 <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-4" style={{textAlign: 'left'}}>Federico Valle</h1>
-                <p className="lead" style={{textAlign: 'left'}}>Soy un estudiante de 3er año de Ingeniería en Sistemas de Información en la UTN FRLP.</p>
-                <p className="lead" style={{textAlign: 'left'}}>Me gusta analizar problemas reales, diseñar soluciones, desarrollar sitios web, tengo facilidad para aprender nuevas tecnologías, tambien me gusta la ciencia, la fisica, entre otras cosas.</p>
-                <p className="lead" style={{textAlign: 'left'}}>Aprendí a programar en 3er año de secundaria, me encanto y decidí esto es a lo que me queria dedicar.</p>
+                <p className="lead" style={{textAlign: 'left'}}>Soy desarrollador Full Stack. Estudiante de 3er año de Ingeniería en Sistemas de Información UTN FRLP. Becado del LINA</p>
+                <p className="lead" style={{textAlign: 'left'}}>Mi sueño es ser un profesional que partiendo de problemas complejos, sea capaz de analizarlos, transformarlos en requerimientos y diseñar e implementar soluciones que agreguen valor al mundo.</p>
                 
             </div>
             </div>

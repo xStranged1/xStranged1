@@ -1,5 +1,6 @@
 import house from '../assets/house.png'
 import esmalte from '../assets/esmalte.png'
+import rickAndMortyImg from '../assets/rickAndMortyImg.jpg'
 import casaLaCosta from '../assets/casaLaCosta.png'
 
 export default function SectionMyProjects() {
@@ -38,6 +39,16 @@ export default function SectionMyProjects() {
                     <h3 className="fs-2 text-body-emphasis">Consultorio Laura Bottarini</h3>
                     <p>Sistema web local para gestionar clientes y turnos de un consultorio esteticista</p>
                     <button type="button" className="btn btn-outline-secondary btn-lg px-4" onClick={()=>{window.location.href = '#Consultorio'}}>Ver más</button>
+                </div>
+                <div className="feature col">
+                    <div className="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                        <img src={rickAndMortyImg} className="mt-5" width="155" height="115"/>
+                    </div>
+                    <h3 className="fs-2 text-body-emphasis">Rick and Morty Guess</h3>
+                    <p>Juego de adivinar personajes de Rick and Morty. Consume api de https://rickandmortyapi.com/</p>
+                    <a className="btn btn-primary btn-lg px-4 me-md-2" target='_blank' href="https://xstranged1.github.io/rick-and-morty-guess/">
+                        Jugar
+                    </a>
                 </div>
                 </div>
             </div>
