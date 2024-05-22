@@ -5,9 +5,11 @@ import s2 from '../assets/screens-consultorio/2s.png'
 import s3 from '../assets/screens-consultorio/3s.png' 
 import s4 from '../assets/screens-consultorio/4s.png'
 import s5 from '../assets/screens-consultorio/5s.png'
+import { useTranslation } from 'react-i18next';
 
 
 export default function SectionConsultorio() {
+    const { t } = useTranslation();
 
     const title = {
         userSelect: 'none',
@@ -33,9 +35,9 @@ export default function SectionConsultorio() {
         <div>
             <div className="px-4 py-5 my-5 text-center" id='Consultorio'>
                 <img className="d-block mx-auto mb-4" src={woman} alt="" width="256" height="256"/> 
-                <h1 className="display-5 fw-bold text-body-emphasis">Consultorio Esteticista</h1>
+                <h1 className="display-5 fw-bold text-body-emphasis">{t('ConsultorioMainTitle')} </h1>
                 <div className="col-lg-6 mx-auto">
-                    <p className="lead mb-4">Proyecto realizado en el año 2019, utilizando PHP, SQL y corriendo en un servidor local APACHE. Actualmente sigue en funcionamiento</p>
+                    <p className="lead mb-4">{t('ConsultorioMainDesc')} </p>
                 </div>
             </div>
 
@@ -59,7 +61,7 @@ export default function SectionConsultorio() {
                     </svg>
                     <div className="container">
                         <div className="carousel-caption">
-                            <h1 style={title}>Pantalla de inicio</h1>
+                            <h1 style={title}>{t('inicio')} </h1>
                         </div>
                     </div>
                 </div>
@@ -75,7 +77,7 @@ export default function SectionConsultorio() {
 
                     <div className="container" >
                         <div className="carousel-caption">
-                            <h1 style={title}>Pantalla Crear Cliente</h1>
+                            <h1 style={title}>{t('crearCliente')}</h1>
                         </div>
                     </div>
                 </div>
@@ -90,8 +92,8 @@ export default function SectionConsultorio() {
                     </svg>
                     <div className="container">
                         <div className="carousel-caption">
-                            <h1 style={title}>Pantalla Ver Clientes</h1>
-                            <p style={subtitle}>Si se elimina un cliente se eliminan tambien sus turnos</p>
+                            <h1 style={title}>{t('verCliente')}</h1>
+                            <p style={subtitle}>{t('verClienteDesc')}</p>
                         </div>
                     </div>
                 </div>
@@ -106,7 +108,7 @@ export default function SectionConsultorio() {
                     </svg>
                     <div className="container">
                         <div className="carousel-caption">
-                            <h1 style={title}>Pantalla de Turnos</h1>
+                            <h1 style={title}>{t('turnos')}</h1>
                         </div>
                     </div>
                 </div>
@@ -121,7 +123,7 @@ export default function SectionConsultorio() {
                     </svg>
                     <div className="container">
                         <div className="carousel-caption">
-                            <h1 style={title}>Pantalla Modificar Turnos</h1>
+                            <h1 style={title}>{t('editTurnos')}</h1>
                         </div>
                     </div>
                 </div>

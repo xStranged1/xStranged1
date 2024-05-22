@@ -3,6 +3,7 @@ import imgReact from '../assets/imgReact.png'
 import imgExpo from '../assets/imgExpo.png'
 import imgNotification from '../assets/imgNotification.png'
 import circleGreen from'../assets/circle-fill.png'
+import circle from'../assets/circle.png'
 import screenSignIn from '../assets/screens-appLimpieza/screenSignIn.png'
 import screenCreateTask from '../assets/screens-appLimpieza/screenCreateTask.png'
 import screenLogIn from '../assets/screens-appLimpieza/screenLogIn.png'
@@ -10,9 +11,11 @@ import videoAsign from '../assets/screens-appLimpieza/videoAsign.mp4'
 import videoHome from '../assets/screens-appLimpieza/videoHome.mp4'
 import videoHist from '../assets/screens-appLimpieza/videoHist.mp4'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 
 export default function SectionAppLimpieza(){
+    const { t } = useTranslation();
 
     const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
@@ -47,8 +50,8 @@ export default function SectionAppLimpieza(){
                         <div style={{marginLeft: 10}}/>
                         <img src={imgExpo} className="bi me-2" width="55" height="55"/>
                     </div>
-                    <h3 className="fs-2 text-body">React Native, Firebase y Expo</h3>
-                    <p className="text-body-secondary text-center">APK Generada con EAS build</p>
+                    <h3 className="fs-2 text-body">React Native, Firebase {t('y')} Expo</h3>
+                    <p className="text-body-secondary text-center">{t('generatedBy')} </p>
                 
 
 
@@ -108,7 +111,7 @@ export default function SectionAppLimpieza(){
                                 </video>
                                 <div className="container">
                                     <div className="carousel-caption">
-                                        <h1 style={title}>Historial</h1>
+                                        <h1 style={title}>{t('Historial')}</h1>
                                     </div>
                                 </div>
                             </div>
@@ -118,7 +121,7 @@ export default function SectionAppLimpieza(){
                                 </video>
                                 <div className="container">
                                     <div className="carousel-caption">
-                                        <h1 style={title}>Asignar tareas</h1>
+                                        <h1 style={title}>{t('AsignarTareas')}</h1>
                                     </div>
                                 </div>
                             </div>
@@ -133,7 +136,7 @@ export default function SectionAppLimpieza(){
                                 </svg>
                                 <div className="container">
                                     <div className="carousel-caption">
-                                        <h1 style={title}>Crear tarea</h1>
+                                        <h1 style={title}>{t('CrearTarea')} </h1>
                                     </div>
                                 </div>
                             </div>
@@ -164,7 +167,7 @@ export default function SectionAppLimpieza(){
                                 <i className="bi bi-person-fill-add"></i>
                             </div>
                             <h4 className="fw-semibold mb-0 text-body-emphasis text-left">Register/Log-In</h4>
-                            <p className="text-body-secondary text-left">Autenticar usuarios, otorgar permisos y configuracion</p>
+                            <p className="text-body-secondary text-left">{t('logInDesc')}</p>
                         </div>
 
                         <div className="col d-flex flex-column gap-2">
@@ -172,45 +175,45 @@ export default function SectionAppLimpieza(){
                             <div className="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
                                 <i className="bi bi-house-add"></i>
                             </div>
-                            <h4 className="fw-semibold mb-0 text-body-emphasis text-left">Crear sectores y tareas</h4>
-                            <p className="text-body-secondary text-left">CRUD sectores y tareas. Cada tarea pertenece a un sector, tiene nombre, descripción y frecuencia</p>
+                            <h4 className="fw-semibold mb-0 text-body-emphasis text-left">{t('crearSectoresYTareas')}</h4>
+                            <p className="text-body-secondary text-left">{t('crearSectoresYTareasDesc')}</p>
                         </div>
 
                         <div className="col d-flex flex-column gap-2">
                             <div className="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
                                 <i className="bi bi-hand-index"></i>
                             </div>
-                            <h4 className="fw-semibold mb-0 text-body-emphasis text-left">Asignar tareas manualmente</h4>
-                            <p className="text-body-secondary text-left">Un usuario con permisos puede asignar tareas a otro usuario, tambien desasignar</p>
+                            <h4 className="fw-semibold mb-0 text-body-emphasis text-left">{t('AsignarTareasManual')}</h4>
+                            <p className="text-body-secondary text-left">{t('AsignarTareasManualDesc')}</p>
                         </div>
 
                         <div className="col d-flex flex-column gap-2">
                             <div className="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
                                 <i className="bi bi-gear-fill"></i>
                             </div>
-                            <h4 className="fw-semibold mb-0 text-body-emphasis text-left">Asignar tareas automaticamente</h4>
-                            <p className="text-body-secondary text-left">De forma aleatoria y equitativa o rotacional por semana y en un orden configurable</p>
+                            <h4 className="fw-semibold mb-0 text-body-emphasis text-left">{t('AsignarTareasAutomaticamente')}</h4>
+                            <p className="text-body-secondary text-left">{t('AsignarTareasAutomaticamenteDesc')}</p>
                         </div>
                         <div className="col d-flex flex-column gap-2">
                             <div className="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
                                 <i className="bi bi-check2-square"></i>
                             </div>
-                            <h4 className="fw-semibold mb-0 text-body-emphasis text-left">Marcar tareas</h4>
-                            <p className="text-body-secondary text-left">Un usuario puede marcar completadas sus propias tareas y el usuario que tiene permiso las puede marcar controladas</p>
+                            <h4 className="fw-semibold mb-0 text-body-emphasis text-left">{t('MarcarTareas')}</h4>
+                            <p className="text-body-secondary text-left">{t('MarcarTareasDesc')}</p>
                         </div>
                         <div className="col d-flex flex-column gap-2">
                             <div className="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                                <img src={circleGreen} width={22} alt="" />
+                                <img src={circle} width={31} alt="" />
                             </div>
-                            <h4 className="fw-semibold mb-0 text-body-emphasis text-left">Estado de las tareas asignadas</h4>
-                            <p className="text-body-secondary text-left">Verde si estan todas controladas, azul si estan marcadas por el usuario y amarillo si estan asignadas sin marcar </p>
+                            <h4 className="fw-semibold mb-0 text-body-emphasis text-left">{t('Estado')}</h4>
+                            <p className="text-body-secondary text-left">{t('EstadoDesc')}</p>
                         </div>
                         <div className="col d-flex flex-column gap-2">
                             <div className="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
                                 <img src={imgNotification} width={33} height={33} alt="" />
                             </div>
-                            <h4 className="fw-semibold mb-0 text-body-emphasis text-left">Notificaciones</h4>
-                            <p className="text-body-secondary text-left">El sistema puede notificar a los usuarios cuando se les asignan tareas, si no marcaron completadas sus tareas</p>
+                            <h4 className="fw-semibold mb-0 text-body-emphasis text-left">{t('Notificaciones')}</h4>
+                            <p className="text-body-secondary text-left">{t('NotificacionesDesc')}</p>
                         </div>
                         
 
@@ -219,8 +222,8 @@ export default function SectionAppLimpieza(){
                             <div className="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
                                 <i className="bi bi-clock-history"></i>
                             </div>
-                            <h4 className="fw-semibold mb-0 text-body-emphasis text-left">Historial</h4>
-                            <p className="text-body-secondary text-left">Todos los usuarios tienen su historial de tareas asignadas por semana</p>
+                            <h4 className="fw-semibold mb-0 text-body-emphasis text-left">{t('Historial')}</h4>
+                            <p className="text-body-secondary text-left">{t('HistorialDesc')}</p>
                         </div>
                     </div>
                                     

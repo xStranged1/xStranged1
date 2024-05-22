@@ -1,7 +1,13 @@
+import { useTranslation } from 'react-i18next';
 import cv from '../assets/CV.pdf'
+import { t } from 'i18next'
+
 export default function Footer(){
+
+    const { t } = useTranslation();
+
     return(
-        <div>
+        <div id='Contacto'>
             <div className="b-example-divider"></div>
             <div className="container">
             <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -12,7 +18,7 @@ export default function Footer(){
                     <span className="mb-1 mb-md-0 text-body-secondary"> xStranged1</span>
                 </a>
                     <ul className="nav justify-content-end list-unstyled d-flex mt-2 align-items-baseline">
-                    <li className="ms-3"><a href={cv} download>Descargar CV</a></li>
+                    <li className="ms-3"><a href={cv} download>{t('descargarCV')} </a></li>
 
                     
                         <li className="ms-3"><p className="text-body-secondary">fede.valle04@gmail.com</p> </li>

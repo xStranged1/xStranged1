@@ -7,9 +7,12 @@ import SectionMyProjects from './components/sectionMyProjects'
 import SectionAppLimpieza from './components/sectionAppLimpieza'
 import SectionConsultorio from './components/consultorio'
 import Footer from './components/footer';
+import { useTranslation } from 'react-i18next';
 
 function App() {
 
+  
+  
   return (
     <div>
       <Header />

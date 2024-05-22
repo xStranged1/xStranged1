@@ -1,6 +1,43 @@
 import { useState } from 'react'
 import ghIcon from '../assets/gitHub.png'
+import { useTranslation } from 'react-i18next'
+
+const DropMenuLanguaje = () => {
+    const [expanded, setExpanded] = useState(false)
+    const [language, setLanguaje] = useState('ES')
+    const { i18n } = useTranslation();
+
+    const changeLanguage = (language) => {
+        i18n.changeLanguage(language);
+    };
+
+    return(
+        <div className="dropdown">
+            <button className="btn btn-secondary dropdown-toggle" 
+                type="button" id="dropdownMenu2"
+                data-toggle="dropdown" 
+                aria-haspopup="true"
+                onClick={() => setExpanded(!expanded)}
+                aria-expanded={expanded ? "true" : "false"}>
+                {language}
+            </button>
+            <div className={`dropdown-menu ${expanded ? 'show' : ''}`} aria-labelledby="dropdownMenu2">
+                <button className="dropdown-item" type="button"
+                    onClick={() => {
+                        setLanguaje('ES');
+                        changeLanguage('es')
+                    } }>ES</button>
+                <button className="dropdown-item" type="button"
+                    onClick={() => {
+                        setLanguaje('EN');
+                        changeLanguage('en')
+                    }}>EN</button>
+            </div>
+        </div>
+    )
+}
 export default function Header () {
+
     const [expanded, setExpanded] = useState(false)
     return(
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark py-3 mb-4 border-bottom" aria-label="navbar">
@@ -20,29 +57,11 @@ export default function Header () {
                         <li className="nav-item"><a href="#CasaLaCosta" className="nav-link color-ghwt ">CasaLaCosta</a></li>
                         <li className="nav-item"><a href="#Consultorio" className="nav-link color-ghwt">Esteticista</a></li>
                         <li className="nav-item"><a href="#Contacto" className="nav-link color-ghwt">Contacto</a></li>
+                        <DropMenuLanguaje />
                     </ul>
                     
                 </div>
             </div>
         </nav>
-        // <div className='container'>
-
-        //     <nav className="navbar-expand-lg d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        //         <a href="https://github.com/xstranged1" target='_blank' className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none hover-op">
-        //             <img src={ghIcon} className="bi me-2" width="40" height="40"/>
-        //             <span className="fs-4">xStranged</span>
-        //         </a>
-                
-
-                // <ul className="nav nav-pills">
-                //     <li className="nav-item"><a href="#appLimpieza" className="nav-link active">appLimpieza</a></li>
-                //     <li className="nav-item"><a href="#CasaLaCosta" className="nav-link">CasaLaCosta</a></li>
-                //     <li className="nav-item"><a href="#Consultorio" className="nav-link">Esteticista</a></li>
-                //     <li className="nav-item"><a href="#Contacto" className="nav-link">Contacto</a></li>
-                // </ul>
-                
-
-        //     </nav>
-        // </div>
     )
 }
