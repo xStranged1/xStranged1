@@ -1,14 +1,22 @@
 {
     "y": "and",
-    "myDescP1": "I am a Full Stack developer. Third-year student of Information Systems Engineering at UTN FRLP. LINA scholarship recipient.",
+    "myDescP1": "I am a Full Stack developer. Third-year student of Information Systems Engineering at UTN FRLP. Intern at LINA.",
     "myDescP2": "My dream is to become a professional who, starting from complex problems, can analyze them, transform them into requirements, and design and implement solutions that add value to the world.",
+    
+    "projects": "Projects",
+    "someProjectsTitle": "Some of my projects",
     "appLimpiezaDesc": "Mobile application developed to manage the information of weekly tasks assigned to a group of users.",
     "casaLaCostaDesc1": "Website to introduce the Student Center of the Partido de La Costa, the property located in La Plata, and its mascot.",
-    "casaLaCostaDesc2": "developed together with",
+    "casaLaCostaDesc2": "developed together with⠀",
     "consultorioTitle": "Laura Bottarini Clinic",
     "consultorioDesc": "Local web system to manage clients and appointments for an aesthetic clinic.",
     "rickAndMortyDesc": "Rick and Morty character guessing game. Consumes API from https://rickandmortyapi.com/",
+    "calendaryDesc": "Create events, invite participants, find common availability easily",
     "snailSortDesc": "Challenge to sort an nxn matrix following a spiral pattern.",
+    "visitWebSite": "Visit website",
+    "seeMore": "See more",
+    "play": "Play",
+
 
     "generatedBy": "APK generated with EAS build",
     "logInDesc": "Authenticate users, grant permissions, and configuration.",
