@@ -3,6 +3,7 @@ import esmalte from "../assets/esmalte.png";
 import rickAndMortyImg from "../assets/rickAndMortyImg.jpg";
 import casaLaCosta from "../assets/casaLaCosta.png";
 import snail from "../assets/snail.png";
+import calendary from "../assets/Calendary.png";
 import prime from "../assets/icons/prime.png";
 import php from "../assets/icons/php.png";
 import { useTranslation } from "react-i18next";
@@ -43,86 +44,7 @@ export default function SectionMyProjects() {
                     <div className="col py-3">
                         <div className="border border-1 rounded p-5">
                             <div className="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                                <img
-                                    src={casaLaCosta}
-                                    className="mt-5"
-                                    width="200%"
-                                    height="200%"
-                                />
-                            </div>
-                            <h3 className="fs-2 text-body-emphasis">CasaLaCosta</h3>
-                            <p>{t("casaLaCostaDesc1")}</p>
-                            <p>
-                                {t("casaLaCostaDesc2")}
-                                <a
-                                    href="https://github.com/nachitoooo"
-                                    target="_blank"
-                                    className="icon-link"
-                                >
-                                    Nacho
-                                </a>
-                            </p>
-                            <a
-                                className="btn btn-primary btn-lg px-4 me-md-2"
-                                target="_blank"
-                                href="https://nachitoooo.github.io/casadelacosta/"
-                            >
-                                {t("visitWebSite")}
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="col py-3">
-                        <div className="border border-1 rounded p-5">
-                            <div className="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                                <img src={esmalte} className="mt-5" width="100" height="100" />
-                            </div>
-                            <h3 className="fs-2 text-body-emphasis">
-                                {t("consultorioTitle")}
-                            </h3>
-                            <div style={{ flexDirection: "row" }}>
-                                <a href="https://primereact.org/" target="_blank">
-                                    <img src={php} width="45" height="26" />
-                                </a>
-                            </div>
-                            <p>{t("consultorioDesc")}</p>
-                            <button
-                                type="button"
-                                className="btn btn-outline-secondary btn-lg px-4"
-                                onClick={() => {
-                                    window.location.href = "#Consultorio";
-                                }}
-                            >
-                                {t("seeMore")}
-                            </button>
-                        </div>
-                    </div>
-
-                    <div className="col py-3">
-                        <div className="border border-1 rounded p-5">
-                            <div className="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                                <img
-                                    src={rickAndMortyImg}
-                                    className="mt-5 rounded border-2 border-black"
-                                    width="163"
-                                    height="121"
-                                />
-                            </div>
-                            <h3 className="fs-2 text-body-emphasis">Rick and Morty Guess</h3>
-                            <p>{t("rickAndMortyDesc")}</p>
-                            <a
-                                className="btn btn-primary btn-lg px-4 me-md-2"
-                                target="_blank"
-                                href="https://xstranged1.github.io/rick-and-morty-guess/"
-                            >
-                                {t("play")}
-                            </a>
-                        </div>
-                    </div>
-                    <div className="col py-3">
-                        <div className="border border-1 rounded p-5">
-                            <div className="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                                <img src={snail} className="mt-5" width="120" height="120" />
+                                <img src={calendary} className="mt-5" width="120" height="120" />
                             </div>
                             <h3 className="fs-2 text-body-emphasis">Calendary</h3>
                             <div style={{ flexDirection: "row" }}>
@@ -188,6 +110,84 @@ export default function SectionMyProjects() {
                                 href="https://xstranged1.github.io/Calendary/"
                             >
                                 {t("seeMore")}
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col py-3">
+                        <div className="border border-1 rounded p-5">
+                            <div className="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                                <img src={esmalte} className="mt-5" width="100" height="100" />
+                            </div>
+                            <h3 className="fs-2 text-body-emphasis">
+                                {t("consultorioTitle")}
+                            </h3>
+                            <div style={{ flexDirection: "row" }}>
+                                <a href="https://primereact.org/" target="_blank">
+                                    <img src={php} width="45" height="26" />
+                                </a>
+                            </div>
+                            <p>{t("consultorioDesc")}</p>
+                            <button
+                                type="button"
+                                className="btn btn-outline-secondary btn-lg px-4"
+                                onClick={() => {
+                                    window.location.href = "#Consultorio";
+                                }}
+                            >
+                                {t("seeMore")}
+                            </button>
+                        </div>
+                    </div>
+
+                    <div className="col py-3">
+                        <div className="border border-1 rounded p-5">
+                            <div className="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                                <img
+                                    src={rickAndMortyImg}
+                                    className="mt-5 rounded border-2 border-black"
+                                    width="163"
+                                    height="121"
+                                />
+                            </div>
+                            <h3 className="fs-2 text-body-emphasis">Rick and Morty Guess</h3>
+                            <p>{t("rickAndMortyDesc")}</p>
+                            <a
+                                className="btn btn-primary btn-lg px-4 me-md-2"
+                                target="_blank"
+                                href="https://xstranged1.github.io/rick-and-morty-guess/"
+                            >
+                                {t("play")}
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col py-3">
+                        <div className="border border-1 rounded p-5">
+                            <div className="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                                <img
+                                    src={casaLaCosta}
+                                    className="mt-5"
+                                    width="200%"
+                                    height="200%"
+                                />
+                            </div>
+                            <h3 className="fs-2 text-body-emphasis">CasaLaCosta</h3>
+                            <p>{t("casaLaCostaDesc1")}</p>
+                            <p>
+                                {t("casaLaCostaDesc2")}
+                                <a
+                                    href="https://github.com/nachitoooo"
+                                    target="_blank"
+                                    className="icon-link"
+                                >
+                                    Nacho
+                                </a>
+                            </p>
+                            <a
+                                className="btn btn-primary btn-lg px-4 me-md-2"
+                                target="_blank"
+                                href="https://nachitoooo.github.io/casadelacosta/"
+                            >
+                                {t("visitWebSite")}
                             </a>
                         </div>
                     </div>
