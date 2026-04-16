@@ -23,43 +23,25 @@ const DropMenuLanguaje = () => {
             </button>
             <div className={`dropdown-menu ${expanded ? 'show' : ''}`} aria-labelledby="dropdownMenu2">
                 <button className="dropdown-item" type="button"
-                    onClick={() => {
-                        setLanguaje('ES');
-                        changeLanguage('es')
-                    }}>ES</button>
+                    onClick={() => { setLanguaje('ES'); changeLanguage('es') }}>ES</button>
                 <button className="dropdown-item" type="button"
-                    onClick={() => {
-                        setLanguaje('EN');
-                        changeLanguage('en')
-                    }}>EN</button>
-
+                    onClick={() => { setLanguaje('EN'); changeLanguage('en') }}>EN</button>
                 <button className="dropdown-item" type="button"
-                    onClick={() => {
-                        setLanguaje('DE');
-                        changeLanguage('de')
-                    }}>DE</button>
+                    onClick={() => { setLanguaje('DE'); changeLanguage('de') }}>DE</button>
                 <button className="dropdown-item" type="button"
-                    onClick={() => {
-                        setLanguaje('IT');
-                        changeLanguage('it')
-                    }}>IT</button>
+                    onClick={() => { setLanguaje('IT'); changeLanguage('it') }}>IT</button>
                 <button className="dropdown-item" type="button"
-                    onClick={() => {
-                        setLanguaje('FR');
-                        changeLanguage('fr')
-                    }}>FR</button>
+                    onClick={() => { setLanguaje('FR'); changeLanguage('fr') }}>FR</button>
                 <button className="dropdown-item" type="button"
-                    onClick={() => {
-                        setLanguaje('RU');
-                        changeLanguage('ru')
-                    }}>RU</button>
+                    onClick={() => { setLanguaje('RU'); changeLanguage('ru') }}>RU</button>
             </div>
         </div>
     )
 }
-export default function Header() {
 
+export default function Header({ darkMode, toggleDarkMode }) {
     const [expanded, setExpanded] = useState(false)
+
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark py-3 mb-4 border-bottom" aria-label="navbar">
             <div className="container px-4">
@@ -68,19 +50,34 @@ export default function Header() {
                     <div className='ml-10' />
                     <span className="fs-4 color-ghwt">xStranged</span>
                 </a>
-                <button className="navbar-toggler" onClick={() => { expanded ? setExpanded(false) : setExpanded(true) }} type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <button className="navbar-toggler" onClick={() => setExpanded(prev => !prev)} type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
                 <div className={`collapse navbar-collapse flex-reverse ${expanded ? 'mt-4' : ''}`} id="navbar">
-                    <ul className="nav nav-pills justify-content-center">
+                    <ul className="nav nav-pills justify-content-center align-items-center">
                         <li className="nav-item"><a href="#appLimpieza" className="nav-link active color-ghwt">appLimpieza</a></li>
-                        <li className="nav-item"><a href="#CasaLaCosta" className="nav-link color-ghwt ">CasaLaCosta</a></li>
+                        <li className="nav-item"><a href="#XtremeGym" className="nav-link color-ghwt">XtremeGym</a></li>
+                        <li className="nav-item"><a href="#CasaLaCosta" className="nav-link color-ghwt">CasaLaCosta</a></li>
                         <li className="nav-item"><a href="#Consultorio" className="nav-link color-ghwt">Esteticista</a></li>
                         <li className="nav-item"><a href="#Contacto" className="nav-link color-ghwt">Contacto</a></li>
-                        <DropMenuLanguaje />
-                    </ul>
 
+                        {/* Toggle dark mode */}
+                        <li className="nav-item ms-2">
+                            <button
+                                onClick={toggleDarkMode}
+                                className="btn btn-outline-light btn-sm d-flex align-items-center gap-1"
+                                title={darkMode ? 'Modo claro' : 'Modo oscuro'}
+                                style={{ border: '1px solid rgba(255,255,255,0.3)' }}
+                            >
+                                <i className={`bi ${darkMode ? 'bi-sun-fill' : 'bi-moon-fill'}`}></i>
+                            </button>
+                        </li>
+
+                        <li className="nav-item ms-2">
+                            <DropMenuLanguaje />
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>

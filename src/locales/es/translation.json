@@ -1,6 +1,6 @@
 {
     "y": "y",
-    "myDescP1": "Soy desarrollador Full Stack. Estudiante de 3er año de Ingeniería en Sistemas de Información UTN FRLP. Becado del LINA",
+    "myDescP1": "Soy desarrollador Full Stack. Estudiante de 4to año de Ingeniería en Sistemas de Información UTN FRLP. Becado del LINA",
     "myDescP2": "Mi sueño es ser un profesional que partiendo de problemas complejos, sea capaz de analizarlos, transformarlos en requerimientos y diseñar e implementar soluciones que agreguen valor al mundo.",
     
     "projects": "Proyectos",
@@ -45,5 +45,37 @@
     "turnos": "Turnos",
     "editTurnos": "Modificar turnos",
 
-    "descargarCV": "Descargar CV"
+    "descargarCV": "Descargar CV",
+
+    "xg_cardDesc": "Sistema integral de gestión para gimnasios. Web + app mobile publicada en Play Store y App Store. +1.500 usuarios registrados en producción.",
+    "xg_mainDesc": "Sistema completo que transforma la gestión de un gimnasio: centraliza clientes, pagos, rutinas y comunicación en una sola plataforma. Backend con Django REST Framework, frontend web con React y shadcn/ui, app mobile con React Native y Expo, todo desplegado en una VM en Donweb con dominio configurado en Cloudflare.",
+    "xg_stack": "Stack tecnológico",
+    "xg_usersRegistered": "usuarios registrados",
+    "xg_inProduction": "En producción",
+    "xg_accessTitle": "Acceder al proyecto",
+    "xg_visitWeb": "Visitar sitio web",
+
+    "xg_rolesTitle": "Roles y usuarios",
+    "xg_rolesDesc": "Tres perfiles: Admin, Entrenador y Cliente. Cada uno con sus permisos, vistas y funcionalidades específicas.",
+
+    "xg_asistenciaTitle": "Asistencia por QR",
+    "xg_asistenciaDesc": "Los socios registran su asistencia escaneando un código QR al ingresar al gimnasio.",
+
+    "xg_rutinasTitle": "Rutinas personalizadas",
+    "xg_rutinasDesc": "Los entrenadores crean y asignan rutinas estructuradas. Cada usuario accede a la suya desde la app mobile.",
+
+    "xg_pagosTitle": "Pagos con Mercado Pago",
+    "xg_pagosDesc": "Integración completa con Mercado Pago para gestión de cuotas, pagos digitales y control de morosidad.",
+
+    "xg_notifTitle": "Notificaciones push",
+    "xg_notifDesc": "El sistema notifica a los usuarios sobre vencimientos, nuevas rutinas y comunicados del gimnasio vía Firebase.",
+
+    "xg_progresoTitle": "Seguimiento de progreso",
+    "xg_progresoDesc": "Registro de objetivos, lesiones y evolución física de cada usuario a lo largo del tiempo.",
+
+    "xg_infraTitle": "Infraestructura cloud",
+    "xg_infraDesc": "Desplegado en VM Donweb, dominio en Cloudflare, imágenes y PDFs de certificados médicos en Cloudflare R2.",
+
+    "xg_authTitle": "Autenticación segura",
+    "xg_authDesc": "Sistema de auth propio con Django + Firebase para notificaciones y autenticación en la app mobile."
 }
