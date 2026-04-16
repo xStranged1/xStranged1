@@ -56,7 +56,7 @@ export default function Header({ darkMode, toggleDarkMode }) {
 
                 <div className={`collapse navbar-collapse flex-reverse ${expanded ? 'mt-4' : ''}`} id="navbar">
                     <ul className="nav nav-pills justify-content-center align-items-center">
-                        <li className="nav-item"><a href="#appLimpieza" className="nav-link active color-ghwt">appLimpieza</a></li>
+                        <li className="nav-item"><a href="#appLimpieza" className="nav-link color-ghwt">LimpiezaON</a></li>
                         <li className="nav-item"><a href="#XtremeGym" className="nav-link color-ghwt">XtremeGym</a></li>
                         <li className="nav-item"><a href="#CasaLaCosta" className="nav-link color-ghwt">CasaLaCosta</a></li>
                         <li className="nav-item"><a href="#Consultorio" className="nav-link color-ghwt">Esteticista</a></li>

@@ -27,7 +27,7 @@ export default function SectionMyProjects() {
 
                     {/* appLimpieza */}
                     <div className="col py-3">
-                        <div className="border border-1 rounded p-5 h-100">
+                        <div className="border border-1 rounded p-5 h-100 bg-body-tertiary shadow-sm">
                             <div className="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                                 <img src={house} className="mt-5" width="192" height="139" />
                             </div>
@@ -58,21 +58,37 @@ export default function SectionMyProjects() {
                     </div>
 
                     {/* XtremeGym — NUEVO */}
+                    {/* XtremeGym — NUEVO */}
                     <div className="col py-3">
                         <div className="border border-1 border-success rounded p-5 h-100 position-relative">
                             {/* Badge "En producción" */}
                             <span className="position-absolute top-0 end-0 m-3 badge text-bg-success">
                                 {t("xg_inProduction")}
                             </span>
+
                             <div className="feature-icon d-inline-flex align-items-center justify-content-center fs-1 mb-3 mt-4">
-                                {/* Reemplazá con: <img src={xtremeGymLogo} width="100" height="100" /> */}
                                 <img src={xtremeGymLogo} width="100" height="100" />
                             </div>
+
                             <h3 className="fs-2 text-body-emphasis">XtremeGym</h3>
+
                             <p className="small text-body-secondary mb-1">
                                 Django REST · React · React Native · Expo
                             </p>
+
                             <p>{t("xg_cardDesc")}</p>
+
+                            <p>
+                                {t("xg_with")}{" "}
+                                <a
+                                    href="https://gonzalopdev.github.io/Portafolio/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="link-body-emphasis text-decoration-none"
+                                >
+                                    Gonzalo Perez
+                                </a>
+                            </p>
                             <div className="d-flex gap-2 flex-wrap">
                                 <button
                                     type="button"
@@ -81,6 +97,7 @@ export default function SectionMyProjects() {
                                 >
                                     {t("seeMore")}
                                 </button>
+
                                 <a
                                     href="https://xtremegym.com.ar/"
                                     target="_blank"
@@ -89,13 +106,14 @@ export default function SectionMyProjects() {
                                 >
                                     <i className="bi bi-globe2 me-1"></i>Web
                                 </a>
+
                             </div>
                         </div>
                     </div>
 
                     {/* Calendary */}
                     <div className="col py-3">
-                        <div className="border border-1 rounded p-5 h-100">
+                        <div className="border border-1 rounded p-5 h-100 bg-body-tertiary shadow-sm">
                             <div className="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                                 <img src={calendary} className="mt-5" width="120" height="120" />
                             </div>
@@ -129,7 +147,7 @@ export default function SectionMyProjects() {
 
                     {/* Consultorio */}
                     <div className="col py-3">
-                        <div className="border border-1 rounded p-5 h-100">
+                        <div className="border border-1 rounded p-5 h-100 bg-body-tertiary shadow-sm">
                             <div className="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                                 <img src={esmalte} className="mt-5" width="100" height="100" />
                             </div>
@@ -149,7 +167,7 @@ export default function SectionMyProjects() {
 
                     {/* Rick and Morty */}
                     <div className="col py-3">
-                        <div className="border border-1 rounded p-5 h-100">
+                        <div className="border border-1 rounded p-5 h-100 bg-body-tertiary shadow-sm">
                             <div className="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                                 <img src={rickAndMortyImg} className="mt-5 rounded border-2 border-black" width="163" height="121" />
                             </div>
@@ -163,7 +181,7 @@ export default function SectionMyProjects() {
 
                     {/* CasaLaCosta */}
                     <div className="col py-3">
-                        <div className="border border-1 rounded p-5 h-100">
+                        <div className="border border-1 rounded p-5 h-100 bg-body-tertiary shadow-sm">
                             <div className="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                                 <img src={casaLaCosta} className="mt-5" width="200%" height="200%" />
                             </div>
@@ -181,7 +199,7 @@ export default function SectionMyProjects() {
 
                     {/* Snail Sort */}
                     <div className="col py-3">
-                        <div className="border border-1 rounded p-5 h-100">
+                        <div className="border border-1 rounded p-5 h-100 bg-body-tertiary shadow-sm">
                             <div className="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                                 <img src={snail} className="mt-5" width="120" height="120" />
                             </div>
