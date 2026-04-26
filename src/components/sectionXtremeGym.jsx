@@ -131,7 +131,7 @@ export default function SectionXtremeGym() {
                                 {t('xg_visitWeb')}
                             </a>
                             <a
-                                href="https://play.google.com/store/apps/details?id=deportnet.apps.xtremegym&hl=es"
+                                href="https://play.google.com/store/apps/details?id=com.fedevalle.xtremegym&hl=es"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="btn btn-dark d-flex align-items-center gap-2 justify-content-center"
